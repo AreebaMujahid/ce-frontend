@@ -1,73 +1,54 @@
-# React + TypeScript + Vite
+# 📦 CE Frontend (Brand Comparison UI)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based frontend application for comparing brands, selecting product attributes (length & width), and dynamically fetching SKU and pricing data using REST APIs.
 
-Currently, two official plugins are available:
+Built with **React + Vite + TanStack React Query** for efficient server-state management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Vite)
+- TypeScript
+- TanStack React Query
+- Axios
+- Tailwind CSS
+- React Router DOM
+- Lucide React (icons)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎯 Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 📊 Brand comparison grid UI  
+- 🔍 Dynamic brand selection  
+- 📏 Dependent dropdowns (Length → Width)  
+- 💰 Real-time SKU & price lookup  
+- 📄 Pagination system (1, 2, 3…)  
+- ⚡ Optimized API calls with React Query caching  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
+## ▶️ Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clone the Repository
+```bash
+git clone <your-repo-url>
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 2. Install Dependencies
 ```
+npm install
+```
+### 3. Start Development Server
+```
+npm run dev
+```
+### 4. Open in Browser
+
+Once the server starts, open:
+
+http://localhost:5173
+
+## Demo 
+<img width="1355" height="690" alt="image" src="https://github.com/user-attachments/assets/5c97afc4-8059-4e7a-8d02-7bb75d415af6" />
+
+
